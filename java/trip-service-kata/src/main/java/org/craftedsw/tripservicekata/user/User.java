@@ -2,7 +2,6 @@ package org.craftedsw.tripservicekata.user;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.craftedsw.tripservicekata.trip.Trip;
 
 public class User {
@@ -25,5 +24,9 @@ public class User {
 	public List<Trip> trips() {
 		return trips;
 	}
+
+  public boolean isFriendsWith(User anotherUser) {
+    return friends.contains(anotherUser);
+  }
 
 }
